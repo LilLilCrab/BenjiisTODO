@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "User",
+    "type": "object",
+    "properties": {
+      "email": {
+        "type": "string",
+        "format": "email"
+      },
+      "password": {
+        "type": "string",
+        "minLength": 12,
+        "maxLength": 35
+      },
+      "dateCreated": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "displayName": {
+        "type": "string",
+        "minLength": 1
+      },
+      "userId": {
+        "type": "string"
+      },
+      "profilePicURL": {
+        "type": "string",
+        "format": "uri"
+      },
+      "hometown": {
+        "type": "string"
+      },
+      "birthdate": {
+        "type": "string",
+        "format": "date"
+      }
+    },
+    "required": [
+      "email",
+      "password",
+      "dateCreated",
+      "displayName",
+      "userId"
+    ],
+    "additionalProperties": false
+  }
+  
